@@ -13,7 +13,7 @@ const LoginRight: React.FC = () => {
   const [password, setPassword] = useState<string>("");
   const [showPassword, setShowPassword] = useState<boolean>(false);
   const [isClient, setIsClient] = useState<boolean>(false);
-  const [router, setRouter] = useState<any>(null); // Adicionei o estado do router
+  const [router, setRouter] = useState<any>(null);
 
   useEffect(() => {
     setIsClient(true);
@@ -107,7 +107,7 @@ const LoginRight: React.FC = () => {
             </span>
             <p className="pt-4 nunito-font text-gray-500 text-[14px] font-normal">
               Don’t have an account?{" "}
-              <NextLink href="/register" passHref>
+              <NextLink href="/pages/auth/register" passHref>
                 <span className="text-[#2144e1] text-[15px] font-bold">
                   Sign up
                 </span>

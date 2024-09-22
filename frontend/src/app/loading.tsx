@@ -16,10 +16,8 @@ const App: React.FC = () => {
 
   return (
     <div className="App flex justify-center items-center h-screen">
-      {loading ? (
+      {loading && (
         <ClipLoader size={50} color={"#123abc"} loading={loading} />
-      ) : (
-        <Image src="./img/ico.svg" alt="Logo" width={100} height={100} />
       )}
     </div>
   );

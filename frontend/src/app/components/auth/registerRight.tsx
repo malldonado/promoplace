@@ -24,7 +24,7 @@ function RegisterRight() {
 
   if (info) {
     return (
-      <NextLink href="/login">
+      <NextLink href="/pages/auth/login">
         <span>Redirecting...</span>
       </NextLink>
     );
@@ -93,14 +93,6 @@ function RegisterRight() {
                 checked={terms}
                 onChange={handleCheckboxChange}
               />
-              <p className="ml-2 nunito-font text-gray-500 text-[14px] font-medium">
-                Agree with{" "}
-                <NextLink href="/terms">
-                  <span className="text-[#2144e1] text-[15px] font-bold">
-                    Terms & Conditions
-                  </span>
-                </NextLink>
-              </p>
             </div>
             {error && <div style={{ color: "red" }}>{error}</div>}
             {info && <div style={{ color: "green" }}>{info}</div>}
@@ -109,7 +101,7 @@ function RegisterRight() {
             </button>
             <p className="pt-4 nunito-font text-gray-500 text-[14px] font-normal">
               I Already have an account {" "}
-              <NextLink href="/login" passHref>
+              <NextLink href="/pages/auth/login" passHref>
                 <span className="text-[#2144e1] text-[15px] font-bold">
                   Sign in
                 </span>

@@ -1,25 +1,13 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { BsFillCreditCardFill } from "react-icons/bs";
-import { MdKeyboardArrowRight } from "react-icons/md";
-import { RiDiscountPercentFill, RiMessage3Fill } from "react-icons/ri";
 import {
-  IoReturnDownBack,
-  IoGridOutline,
-  IoBagOutline,
-  IoCardOutline,
   IoChatboxOutline,
   IoPricetagOutline,
   IoSettingsOutline,
   IoExitOutline,
   IoLibraryOutline,
-  IoFileTrayStackedOutline,
-  IoStorefrontOutline,
-  IoBarChartOutline,
 } from "react-icons/io5";
 import { SlStar } from "react-icons/sl";
-import { IoIosSettings } from "react-icons/io";
-import { FiUser } from "react-icons/fi";
 import Link from "next/link";
 
 interface SidebarProps {}
@@ -55,136 +43,69 @@ const Sidebar: React.FC<SidebarProps> = () => {
 
   const items: SidebarItem[] = isSellerRoute
     ? [
-        // {
-        //   id: 1,
-        //   label: "Dashboard",
-        //   route: "/seller",
-        //   emoji: <IoGridOutline className="w-6 h-6 mr-2" />,
-        // },
         {
-          id: 2,
+          id: 1,
           label: "Products",
-          route: "/seller-products",
+          route: "/pages/seller/seller-products",
           emoji: <IoLibraryOutline className="w-5 h-5 mr-2" />,
         },
-        // {
-        //   id: 3,
-        //   label: "Orders",
-        //   route: "/seller-orders",
-        //   emoji: <IoFileTrayStackedOutline className="w-5 h-5 mr-2" />,
-        // },
-        // {
-        //   id: 4,
-        //   label: "Finance",
-        //   route: "/seller-finance",
-        //   emoji: <IoBarChartOutline className="w-5 h-5 mr-2" />,
-        // },
         {
-          id: 5,
+          id: 2,
           label: "Discount",
-          route: "/seller-discount",
+          route: "/pages/seller/seller-discount",
           emoji: <IoPricetagOutline className="w-5 h-5 mr-2" />,
         },
         {
-          id: 6,
+          id: 3,
           label: "Message",
-          route: "/seller-message",
+          route: "/pages/seller/seller-message",
           emoji: <IoChatboxOutline className="w-5 h-5 mr-2" />,
         },
         {
-          id: 7,
+          id: 4,
           label: "Settings",
-          route: "/seller-settings",
+          route: "/pages/seller/seller-settings",
           emoji: <IoSettingsOutline className="w-5 h-5 mr-2" />,
         },
-        // {
-        //   id: 8,
-        //   label: "Account",
-        //   route: "/panel-profile",
-        //   emoji: <IoExitOutline className="w-5 h-5 mr-2" />,
-        // },
         {
-          id: 9,
+          id: 5,
           label: "Home",
           route: "/",
           emoji: <IoExitOutline className="w-5 h-5 mr-2" />,
         },
       ]
     : [
-        // {
-        //   id: 1,
-        //   label: "Dashboard",
-        //   route: "/panel",
-        //   emoji: <IoGridOutline className="w-5 h-5 mr-2" />,
-        // },
         {
-          id: 2,
+          id: 1,
           label: "Wishlist",
-          route: "/panel-wishlist",
+          route: "/pages/panel/panel-wishlist",
           emoji: <SlStar className="w-5 h-5 mr-2" />,
         },
         {
-          id: 3,
+          id: 2,
           label: "Discount",
-          route: "/panel-discount",
+          route: "/pages/panel/panel-discount",
           emoji: <IoPricetagOutline className="w-5 h-5 mr-2" />,
         },
         {
-          id: 4,
+          id: 3,
           label: "Message",
-          route: "/panel-message",
+          route: "/pages/panel/panel-message",
           emoji: <IoChatboxOutline className="w-5 h-5 mr-2" />,
         },
-        // {
-        //   id: 5,
-        //   label: "My shopping",
-        //   route: "/panel-shopping",
-        //   emoji: <IoBagOutline className="w-5 h-5 mr-2" />,
-        // },
-        // {
-        //   id: 7,
-        //   label: "Wanna Sell",
-        //   route: "/seller",
-        //   emoji: <IoStorefrontOutline className="w-5 h-5 mr-2" />,
-        // },
         {
-          id: 6,
+          id: 4,
           label: "Settings",
-          route: "/panel-settings",
+          route: "/pages/panel/panel-settings",
           emoji: <IoSettingsOutline className="w-5 h-5 mr-2" />,
         },
         {
-          id: 7,
+          id: 5,
           label: "Home",
           route: "/",
           emoji: <IoExitOutline className="w-5 h-5 mr-2" />,
         },
       ];
-
-  // const breadCrumbItems: SidebarItem[] = [
-  //   {
-  //     id: 1,
-  //     label: "Home",
-  //     route: "/",
-  //     emoji: <MdKeyboardArrowRight className="text-[20px] fill-black" />,
-  //   },
-  //   {
-  //     id: 2,
-  //     label: "Account",
-  //     route: "/account",
-  //     emoji: <MdKeyboardArrowRight className="text-[20px] fill-black" />,
-  //   },
-  //   ...(isSellerRoute
-  //     ? [
-  //         {
-  //           id: 3,
-  //           label: "Seller",
-  //           route: "/seller",
-  //           emoji: <MdKeyboardArrowRight className="text-[20px] fill-black" />,
-  //         },
-  //       ]
-  //     : []),
-  // ];
 
   const handleItemClick = (item: SidebarItem) => {
     setSelectedItem(item);
@@ -192,17 +113,6 @@ const Sidebar: React.FC<SidebarProps> = () => {
 
   return (
     <div className={`py-2 mr-4 h-full w-[250px]`}>
-      {/* <div className={`flex w-[250px] py-3 text-gray-700 bg-gray-50 pl-4`} aria-label="Breadcrumb">
-        {breadCrumbItems.map((item) => (
-          <Link href={item.route} key={item.id}>
-            <div className={`flex justify-center items-center font-bold ${pathname === item.route ? "text-[#1d4ed8]" : ""}`}>
-              {item.label}
-              {item.emoji}
-            </div>
-          </Link>
-        ))}
-      </div> */}
-
       {/* NAVBAR LEFT */}
       <div>
         <div className="md:flex">

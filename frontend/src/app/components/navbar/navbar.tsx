@@ -3,7 +3,6 @@
 import { Fragment, useState } from "react";
 import { Dialog, Popover, Tab, Transition } from "@headlessui/react";
 import { HiBars3, HiXMark } from "react-icons/hi2";
-import { IoLogoGooglePlaystore, IoLogoAppleAppstore } from "react-icons/io5";
 import PopupLocation from "../popup/popupLocation";
 import SearchIndex from "../popup/popupSearchIndex";
 import PopupLogin from "../popup/popupLogin";
@@ -93,7 +92,6 @@ const Navbar: React.FC = () => {
           >
             <div className="fixed inset-0 bg-black bg-opacity-25" />
           </Transition.Child>
-
           <div className="fixed inset-0 z-40 flex">
             <Transition.Child
               as={Fragment}
@@ -187,7 +185,7 @@ const Navbar: React.FC = () => {
                   </div>
                   <div className="flow-root">
                     <NextLink
-                      href={"/register"}
+                      href={"/pages/auth/register"}
                       className="-m-2 block p-2 font-medium text-gray-900"
                     >
                       Create account
@@ -249,7 +247,6 @@ const Navbar: React.FC = () => {
                             {category.name}
                           </Popover.Button>
                         </div>
-
                         <Transition
                           as={Fragment}
                           enter="transition ease-out duration-200"
@@ -264,7 +261,6 @@ const Navbar: React.FC = () => {
                               className="absolute inset-0 top-1/2 bg-white shadow"
                               aria-hidden="true"
                             />
-
                             <div className="relative bg-white">
                               <div className="mx-auto max-w-7xl px-8">
                                 <div className="grid grid-cols-1 gap-x-8 gap-y-10 py-10">
@@ -317,14 +313,13 @@ const Navbar: React.FC = () => {
             <div className="ml-auto flex items-center">
               <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
                 <a
-                  href="#"
                   className="text-sm font-medium text-gray-700 hover:text-gray-800"
                 >
                   <PopupLogin />
                 </a>
                 <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
                 <NextLink
-                  href="/register"
+                  href="/pages/auth/register"
                   className="text-base font-medium text-black"
                 >
                   Create account
@@ -338,8 +333,8 @@ const Navbar: React.FC = () => {
                 </a>
               </div>
               <div className="flex">
-                <NextLink href="/panel-wishlist" className="p-2 text-black">
-                <SlStar className="text-[20px]" />
+                <NextLink href="/pages/panel/panel-wishlist" className="p-2 text-black">
+                  <SlStar className="text-[20px]" />
                 </NextLink>
               </div>
             </div>

@@ -1,9 +1,6 @@
 import React from "react";
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaFacebookSquare } from "react-icons/fa";
-import { RiInstagramFill } from "react-icons/ri";
-import { FaSquareXTwitter } from "react-icons/fa6";
 
 const Footer: React.FC = () => {
   return (

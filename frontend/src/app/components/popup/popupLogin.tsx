@@ -85,7 +85,7 @@ const PopupLogin: React.FC = () => {
                   Don’t you have an account?{" "}
                   <NextLink
                     className="text-[#2144e1] text-[15px] font-bold"
-                    href="/register"
+                    href="/pages/auth/register"
                   >
                     Sign up
                   </NextLink>
