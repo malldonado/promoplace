@@ -56,7 +56,7 @@ const MainCategories: FC = () => {
       </div>
       <div className="flex justify-center items-center h-auto mt-10">
         <div className="cursor-pointer relative">
-          {data?.map((category) => (
+          {/* {data?.map((category) => (
             <div key={category._id}>
               <img
                 className="h-[150px]"
@@ -64,7 +64,7 @@ const MainCategories: FC = () => {
                 alt="Imagem"
               />
             </div>
-          ))}
+          ))} */}
         </div>
       </div>
     </div>

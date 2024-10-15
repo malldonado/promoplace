@@ -1,0 +1,6 @@
+remove cache
+rm -rf .next
+
+running project
+yarn build
+npx serve@latest out
