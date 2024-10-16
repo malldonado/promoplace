@@ -34,7 +34,7 @@ const PopupLocation: React.FC = () => {
             </div>
             <button className="flex h-[45px] w-full bg-[#2144e1] text-white justify-center items-center mt-5 rounded-[5px] text-[16px] font-medium mb-6">
               <GrLocation className="text-[15px] mr-1" />
-              Use current location
+              Use sua localização
             </button>
           </Dialog>
           <span

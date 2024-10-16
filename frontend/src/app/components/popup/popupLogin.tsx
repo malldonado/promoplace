@@ -18,7 +18,7 @@ const PopupLogin: React.FC = () => {
 
   return (
     <div>
-      <button className="text-black text-base" onClick={openLoginModal}>Sign in</button>
+      <button className="text-black text-base" onClick={openLoginModal}>Acessar</button>
       <React.Fragment>
         <SideSheet isShown={isLogin} onCloseComplete={() => setLogin(false)}>
           <div className="flex flex-col items-center justify-center h-screen max-w-[80%] m-auto">
@@ -30,10 +30,10 @@ const PopupLogin: React.FC = () => {
               alt="Logo"
             />
             <div className="mt-10 w-[90%]">
-              <h2 className="text-[26px] font-bold nunito-font">Login</h2>
+              <h2 className="text-[26px] font-bold nunito-font">Acessar</h2>
               <p className="nunito-font text-[14px] mt-4 text-gray-500">
-                Sign in with your data that you entered during your
-                registration.
+              Faça login com os dados que você inseriu durante o seu
+              registro.
               </p>
               <form className="mt-10">
                 <label
@@ -53,12 +53,12 @@ const PopupLogin: React.FC = () => {
                   className="nunito-font text-[14px] mt-4 text-gray-500"
                   htmlFor="Password"
                 >
-                  Password
+                  Senha
                 </label>
                 <input
                   className="w-full block outline-none border-[1px] border-gray-300 rounded-md h-[40px] p-2 text-[#2144e1] font-bold nunito-font mt-1 placeholder:font-normal"
                   type="password"
-                  placeholder="Password"
+                  placeholder="Senha"
                   id="Password"
                   required
                 />
@@ -68,26 +68,26 @@ const PopupLogin: React.FC = () => {
                     htmlFor="KeepMeLoggedIn"
                     className="ml-2 nunito-font text-gray-500 text-[14px] font-medium"
                   >
-                    Keep me logged in
+                    Mantenha-me conectado
                   </label>
                 </div>
                 <button
                   onClick={handleLoginClick}
                   className="w-full h-[40px] bg-[#2144e1] mt-4 text-white nunito-font rounded-md"
                 >
-                  Login
+                  Acessar
                 </button>
                 <button className="w-full h-[40px] bg-[#3870ff] mt-4 text-white nunito-font rounded-md flex justify-center items-center">
                   <FaGoogle className="mr-2" />
-                  Sign in with Google
+                  Conectar com Google
                 </button>
                 <p className="pt-4 nunito-font text-gray-500 text-[14px] font-normal">
-                  Don’t you have an account?{" "}
+                  Você não tem uma conta?{" "}
                   <NextLink
                     className="text-[#2144e1] text-[15px] font-bold"
                     href="/pages/auth/register"
                   >
-                    Sign up
+                    Registrar
                   </NextLink>
                 </p>
               </form>

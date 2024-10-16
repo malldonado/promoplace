@@ -2,25 +2,25 @@ import React from "react";
 import Image from 'next/image';
 
 const slideImages = [
-    { image: "7.svg", title: 'Automotive' },
-    { image: "8.svg", title: 'Babies & Kids' },
-    { image: "2.svg", title: 'Beauty & Personal Care' },
-    { image: "6.svg", title: 'Books & Office Supplies' },
-    { image: "3.svg", title: 'Electronics' },
-    { image: "1.svg", title: 'Fashion' },
-    { image: "10.svg", title: 'Health' },
-    { image: "5.svg", title: 'Home & Decoration' },
-    { image: "12.svg", title: 'Hobbies & Collectibles' },
+    { image: "7.svg", title: 'Automotivo' },
+    { image: "8.svg", title: 'Bebês e crianças' },
+    { image: "2.svg", title: 'Beleza e cuidados pessoais' },
+    { image: "6.svg", title: 'Livros e materiais de escritório' },
+    { image: "3.svg", title: 'Eletrônicos' },
+    { image: "1.svg", title: 'Moda' },
+    { image: "10.svg", title: 'Saúde' },
+    { image: "5.svg", title: 'Casa & Decoração' },
+    { image: "12.svg", title: 'Hobbies e colecionáveis' },
     { image: "9.svg", title: 'Pet Shop' },
-    { image: "4.svg", title: 'Sports & Leisure' },
-    { image: "11.svg", title: 'Tools & Construction' },
+    { image: "4.svg", title: 'Esportes e Lazer' },
+    { image: "11.svg", title: 'Ferramentas e construção' },
 ];
 
 const Categories: React.FC = () => {
   return (
     <div className="relative max-w-7xl px-12 mx-auto w-full mt-20">
       <div className="flex w-full mb-10">
-        <h2 className="font-bold text-[30px]">Categories</h2>
+        <h2 className="font-bold text-[30px]">Categorias</h2>
       </div>
       <div className="slide-container">
         <div className="slide-grid grid grid-cols-6 gap-6">

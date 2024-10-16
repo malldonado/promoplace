@@ -50,10 +50,10 @@ const LoginRight: React.FC = () => {
           alt="Logo"
           className="mt-8"
         />
-        <div className="mt-10 w-[50%]">
-          <h2 className="text-[26px] font-bold nunito-font">Login</h2>
+        <div className="mt-10 w-[400px]">
+          <h2 className="text-[26px] font-bold nunito-font">Acessar</h2>
           <p className="nunito-font text-[14px] mt-4 text-gray-500">
-            Sign in with your data that you entered during your registration.
+            Faça login com os dados que você inseriu durante seu registro.
           </p>
           <form className="mt-4" onSubmit={handleLoginSubmit}>
             <label
@@ -80,7 +80,7 @@ const LoginRight: React.FC = () => {
             <div className="relative">
               <input
                 className="w-full block outline-none border-[1px] border-gray-300 rounded-md h-[40px] p-2 text-[#2144e1] font-bold nunito-font mt-1 placeholder:font-normal mb-4"
-                placeholder="Password"
+                placeholder="Senha"
                 type={showPassword ? "text" : "password"}
                 value={password}
                 onChange={(e: ChangeEvent<HTMLInputElement>) =>
@@ -98,18 +98,18 @@ const LoginRight: React.FC = () => {
                 )}
               </span>
             </div>
-            <button className="w-full h-[40px] bg-[#2144e1] mt-4 text-white nunito-font rounded-md">
-              Sign in
+            <button className="w-full h-[40px] bg-[#2144e1] text-white nunito-font rounded-md">
+              Acessar
             </button>
             <span className="w-full cursor-pointer h-[40px] bg-[#3870ff] mt-4 text-white nunito-font rounded-md flex justify-center items-center">
               <FaGoogle className="mr-2" />
-              Sign in with Google
+              Conectar com Google
             </span>
             <p className="pt-4 nunito-font text-gray-500 text-[14px] font-normal">
-              Don’t have an account?{" "}
+              Não tem uma conta?{" "}
               <NextLink href="/pages/auth/register" passHref>
                 <span className="text-[#2144e1] text-[15px] font-bold">
-                  Sign up
+                  Registrar
                 </span>
               </NextLink>
             </p>

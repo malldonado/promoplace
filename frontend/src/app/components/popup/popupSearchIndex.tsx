@@ -19,7 +19,7 @@ const PopupSearchIndex: React.FC = () => {
             <input
               className="h-[45px] w-full bg-[#f5f5f5] rounded-[5px] outline-none border border-[#f2f2f2] px-2 text-[#2144e1] font-medium placeholder:font-normal"
               type="text"
-              placeholder="Search products or stores"
+              placeholder="Procurar produtos ou lojas"
             />
             <LiaSearchSolid className="absolute right-2 bottom-0 top-0 my-auto text-[25px] cursor-pointer fill-[#2144e1]" />
           </div>

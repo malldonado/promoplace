@@ -108,7 +108,7 @@ const PopupLocation: React.FC = () => {
       <Pane>
         <Dialog
           isShown={isMapOpen}
-          title="Address for your order"
+          title="Seu endereço"
           onCloseComplete={closeMap}
           hasFooter={false}
           minHeightContent={350}
@@ -120,7 +120,7 @@ const PopupLocation: React.FC = () => {
                   className="h-[45px] w-full bg-[#f5f5f5] rounded-[5px] outline-none border border-[#f2f2f2] px-2 text-[#2144e1] font-medium placeholder:font-normal"
                   type="text"
                   name="address"
-                  placeholder="Search for address or zip code"
+                  placeholder="Procure por endereço ou cep"
                   value={address}
                   onChange={handleInputChange}
                   onKeyDown={handleKeyDown}
@@ -156,7 +156,7 @@ const PopupLocation: React.FC = () => {
               disabled={fetchingCurrentLocation}
             >
               <GrLocation className="text-[15px] mr-1" />
-              Use current location
+              Use sua localização
             </button>
           </div>
         </Dialog>
@@ -166,7 +166,7 @@ const PopupLocation: React.FC = () => {
         >
           <AiOutlinePushpin className="h-5 w-5" />
           <span className="ml-1 cursor-pointer">
-            {selectedSuggestion || currentAddress || "Search your location"}
+            {selectedSuggestion || currentAddress || "Procure sua localização"}
           </span>
         </span>
       </Pane>

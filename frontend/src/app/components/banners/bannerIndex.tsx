@@ -10,13 +10,13 @@ const BannerIndex: React.FC = () => {
 
   const products = (
     <>
-      <HiShoppingBag className="mr-1" /> <p>Products</p>
+      <HiShoppingBag className="mr-1" /> <p>Produtos</p>
     </>
   );
 
   const stores = (
     <>
-      <RiMapPinLine className="mr-1" /> <p>Stores</p>
+      <RiMapPinLine className="mr-1" /> <p>Lojas</p>
     </>
   );
 
@@ -31,7 +31,7 @@ const BannerIndex: React.FC = () => {
   };
 
   const placeholder =
-    selected === "products" ? "Search for products..." : "Search for stores...";
+    selected === "products" ? "Procurar por produtos..." : "Procurar por lojas...";
 
   return (
     <div className="bg-gradient-to-r from-[#2144e1] to-blue-500 w-full h-[500px]">
@@ -39,10 +39,10 @@ const BannerIndex: React.FC = () => {
         <div className="max-w-7xl px-12 flex-col w-full h-[100%] mx-auto lg:flex lg:flex-row lg:justify-center lg:items-center">
           <div className="w-full lg:w-[65%]">
             <div className="text-[34px] text-center font-bold text-white py-10 lg:py-0 lg:tracking-[.2px] lg:text-[44px] lg:text-left">
-              Search for the product or store?
+              Procure por algum produto ou loja
             </div>
             <p className="lg:text-xl lg:text-left lg:px-0 text-white text-center px-4 text-[20px] mb-10 lg:mb-0">
-              With just a few clicks, find the product or store near you!
+              Com apenas alguns cliques, encontre o produto ou loja mais perto de você!
             </p>
             <form className="w-full lg:w-[90%] bg-white h-[150px] rounded-xl mt-5 block px-4 lg:px-0">
               <div className="flex items-center h-[50%] border-b-[1px] border-[#eee] lg:mx-4">
@@ -72,7 +72,7 @@ const BannerIndex: React.FC = () => {
                   className="w-[20%] lg:w-[15%] xl:w-[15%] bg-[#2144e1] text-white flex justify-center items-center h-[45px] rounded-md ml-2 font-medium text-[20px] md:text-[25px] lg:text-[25px] xl:text-[16px] cursor-pointer"
                 >
                   <IoSearch className="mr-1" />
-                  <p className="hidden xl:block">Search</p>
+                  <p className="hidden xl:block">Procurar</p>
                 </button>
               </div>
             </form>

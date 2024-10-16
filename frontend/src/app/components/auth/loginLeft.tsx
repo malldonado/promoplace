@@ -24,13 +24,12 @@ const LoginLeft: React.FC = () => {
             alt="Banner"
             className="h-auto my-auto w-[75%]"
           />
-          <h2 className="text-white font-bold text-[24px] nunito-font mt-10">
-            Leave Reviews for all meals
+          <h2 className="text-white font-bold text-[20px] nunito-font mt-10 text-center px-[20px]">
+          Descubra as melhores ofertas na sua região com a Promoplace, o site que conecta você às promoções imperdíveis das lojas mais próximas!
           </h2>
-          <p className="mt-2 text-white nunito-font text-[14px]">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
+          {/* <p className="mt-2 text-white nunito-font text-[14px]">
+            Descubra as melhores ofertas na sua região com a Promoplace, o site que conecta você às promoções imperdíveis das lojas mais próximas!
+          </p> */}
         </div>
       </div>
     </div>

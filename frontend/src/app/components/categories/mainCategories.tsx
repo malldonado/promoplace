@@ -41,7 +41,7 @@ const MainCategories: FC = () => {
   return (
     <div className="max-w-[1200px] mx-auto mt-[70px]">
       <div className="flex w-full">
-        <h2 className="font-bold text-[30px] w-[80%]">Main categories</h2>
+        <h2 className="font-bold text-[30px] w-[80%]">Principais categorias</h2>
         <div className="flex">
           <p className="flex items-center mr-4 text-[#2144e1] font-bold">
             View All<IoIosArrowForward className="text-[20px]" />

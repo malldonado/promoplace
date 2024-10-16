@@ -110,7 +110,7 @@ const Navbar: React.FC = () => {
                     onClick={() => setOpen(false)}
                   >
                     <span className="absolute -inset-0.5" />
-                    <span className="sr-only">Close menu</span>
+                    <span className="sr-only">Fechar menu</span>
                     <HiXMark className="h-6 w-6" />
                   </button>
                 </div>
@@ -188,7 +188,7 @@ const Navbar: React.FC = () => {
                       href={"/pages/auth/register"}
                       className="-m-2 block p-2 font-medium text-gray-900"
                     >
-                      Create account
+                      Criar uma conta
                     </NextLink>
                   </div>
                 </div>
@@ -212,7 +212,7 @@ const Navbar: React.FC = () => {
               onClick={() => setOpen(true)}
             >
               <span className="absolute -inset-0.5" />
-              <span className="sr-only">Open menu</span>
+              <span className="sr-only">Abrir menu</span>
               <HiBars3 className="h-6 w-6" />
             </button>
 
@@ -322,13 +322,13 @@ const Navbar: React.FC = () => {
                   href="/pages/auth/register"
                   className="text-base font-medium text-black"
                 >
-                  Create account
+                  Criar uma conta
                 </NextLink>
               </div>
 
               <div className="flex lg:ml-6">
                 <a href="#" className="p-2 text-black">
-                  <span className="sr-only">Search</span>
+                  <span className="sr-only">Procurar</span>
                   <SearchIndex />
                 </a>
               </div>

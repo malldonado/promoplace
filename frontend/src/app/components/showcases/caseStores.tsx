@@ -9,7 +9,43 @@ const CaseBestSellers: React.FC = () => {
         <h2 className="font-bold text-[30px] w-[80%]">Stores</h2>
       </div>
       <div className="flex justify-center items-center h-auto mt-10">
-        <div className="relative cursor-pointer w-[200px] h-[200px]">
+        <div className="relative cursor-pointer w-full h-full mx-5">
+          <Image
+            width={200}
+            height={200}
+            className="w-full h-full object-cover"
+            src="/img/profile.svg"
+            alt="Product"
+          />
+        </div>
+        <div className="relative cursor-pointer w-full h-full mx-5">
+          <Image
+            width={200}
+            height={200}
+            className="w-full h-full object-cover"
+            src="/img/profile.svg"
+            alt="Product"
+          />
+        </div>
+        <div className="relative cursor-pointer w-full h-full mx-5">
+          <Image
+            width={200}
+            height={200}
+            className="w-full h-full object-cover"
+            src="/img/profile.svg"
+            alt="Product"
+          />
+        </div>
+        <div className="relative cursor-pointer w-full h-full mx-5">
+          <Image
+            width={200}
+            height={200}
+            className="w-full h-full object-cover"
+            src="/img/profile.svg"
+            alt="Product"
+          />
+        </div>
+        <div className="relative cursor-pointer w-full h-full mx-5">
           <Image
             width={200}
             height={200}
