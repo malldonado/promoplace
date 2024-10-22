@@ -42,70 +42,71 @@ const Sidebar: React.FC<SidebarProps> = () => {
   }
 
   const items: SidebarItem[] = isSellerRoute
-    ? [
-        {
-          id: 1,
-          label: "Products",
-          route: "/pages/seller/seller-products",
-          emoji: <IoLibraryOutline className="w-5 h-5 mr-2" />,
-        },
-        {
-          id: 2,
-          label: "Discount",
-          route: "/pages/seller/seller-discount",
-          emoji: <IoPricetagOutline className="w-5 h-5 mr-2" />,
-        },
-        {
-          id: 3,
-          label: "Message",
-          route: "/pages/seller/seller-message",
-          emoji: <IoChatboxOutline className="w-5 h-5 mr-2" />,
-        },
-        {
-          id: 4,
-          label: "Settings",
-          route: "/pages/seller/seller-settings",
-          emoji: <IoSettingsOutline className="w-5 h-5 mr-2" />,
-        },
-        {
-          id: 5,
-          label: "Home",
-          route: "/",
-          emoji: <IoExitOutline className="w-5 h-5 mr-2" />,
-        },
-      ]
+    ? 
+    [
+      {
+        id: 1,
+        label: "Wishlist",
+        route: "/pages/panel/panel-wishlist",
+        emoji: <SlStar className="w-5 h-5 mr-2" />,
+      },
+      {
+        id: 2,
+        label: "Discount",
+        route: "/pages/panel/panel-discount",
+        emoji: <IoPricetagOutline className="w-5 h-5 mr-2" />,
+      },
+      {
+        id: 3,
+        label: "Message",
+        route: "/pages/panel/panel-message",
+        emoji: <IoChatboxOutline className="w-5 h-5 mr-2" />,
+      },
+      {
+        id: 4,
+        label: "Settings",
+        route: "/pages/panel/panel-settings",
+        emoji: <IoSettingsOutline className="w-5 h-5 mr-2" />,
+      },
+      {
+        id: 5,
+        label: "Home",
+        route: "/",
+        emoji: <IoExitOutline className="w-5 h-5 mr-2" />,
+      },
+    ]
     : [
-        {
-          id: 1,
-          label: "Wishlist",
-          route: "/pages/panel/panel-wishlist",
-          emoji: <SlStar className="w-5 h-5 mr-2" />,
-        },
-        {
-          id: 2,
-          label: "Discount",
-          route: "/pages/panel/panel-discount",
-          emoji: <IoPricetagOutline className="w-5 h-5 mr-2" />,
-        },
-        {
-          id: 3,
-          label: "Message",
-          route: "/pages/panel/panel-message",
-          emoji: <IoChatboxOutline className="w-5 h-5 mr-2" />,
-        },
-        {
-          id: 4,
-          label: "Settings",
-          route: "/pages/panel/panel-settings",
-          emoji: <IoSettingsOutline className="w-5 h-5 mr-2" />,
-        },
-        {
-          id: 5,
-          label: "Home",
-          route: "/",
-          emoji: <IoExitOutline className="w-5 h-5 mr-2" />,
-        },
-      ];
+      {
+        id: 1,
+        label: "Products",
+        route: "/pages/seller/seller-products",
+        emoji: <IoLibraryOutline className="w-5 h-5 mr-2" />,
+      },
+      {
+        id: 2,
+        label: "Discount",
+        route: "/pages/seller/seller-discount",
+        emoji: <IoPricetagOutline className="w-5 h-5 mr-2" />,
+      },
+      {
+        id: 3,
+        label: "Message",
+        route: "/pages/seller/seller-message",
+        emoji: <IoChatboxOutline className="w-5 h-5 mr-2" />,
+      },
+      {
+        id: 4,
+        label: "Settings",
+        route: "/pages/seller/seller-settings",
+        emoji: <IoSettingsOutline className="w-5 h-5 mr-2" />,
+      },
+      {
+        id: 5,
+        label: "Home",
+        route: "/",
+        emoji: <IoExitOutline className="w-5 h-5 mr-2" />,
+      },
+    ]
 
   const handleItemClick = (item: SidebarItem) => {
     setSelectedItem(item);

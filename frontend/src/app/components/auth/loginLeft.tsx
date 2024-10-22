@@ -24,8 +24,8 @@ const LoginLeft: React.FC = () => {
             alt="Banner"
             className="h-auto my-auto w-[75%]"
           />
-          <h2 className="text-white font-bold text-[20px] nunito-font mt-10 text-center px-[20px]">
-          Descubra as melhores ofertas na sua região com a Promoplace, o site que conecta você às promoções imperdíveis das lojas mais próximas!
+          <h2 className="text-white font-bold text-[20px] nunito-font mt-10 text-center px-20">
+            Descubra as melhores ofertas na sua região com a Promoplace, e veja promoções imperdíveis das lojas mais próximas!
           </h2>
           {/* <p className="mt-2 text-white nunito-font text-[14px]">
             Descubra as melhores ofertas na sua região com a Promoplace, o site que conecta você às promoções imperdíveis das lojas mais próximas!
