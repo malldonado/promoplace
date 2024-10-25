@@ -84,24 +84,18 @@ const Sidebar: React.FC<SidebarProps> = () => {
       },
       {
         id: 2,
-        label: "Discount",
-        route: "/pages/seller/seller-discount",
-        emoji: <IoPricetagOutline className="w-5 h-5 mr-2" />,
-      },
-      {
-        id: 3,
         label: "Message",
         route: "/pages/seller/seller-message",
         emoji: <IoChatboxOutline className="w-5 h-5 mr-2" />,
       },
       {
-        id: 4,
+        id: 3,
         label: "Settings",
         route: "/pages/seller/seller-settings",
         emoji: <IoSettingsOutline className="w-5 h-5 mr-2" />,
       },
       {
-        id: 5,
+        id: 4,
         label: "Home",
         route: "/",
         emoji: <IoExitOutline className="w-5 h-5 mr-2" />,
@@ -118,7 +112,7 @@ const Sidebar: React.FC<SidebarProps> = () => {
       <div>
         <div className="md:flex">
           <ul
-            className={`flex-column space-y space-y-2 text-[16px] font-medium dark:text-gray-400 md:me-4 mb-4 md:mb-0 w-full mt-10`}
+            className={`flex-column space-y space-y-2 text-[16px] font-medium dark:text-gray-400 md:me-4 mb-4 md:mb-0 w-[200px] mt-10`}
           >
             {items.map((item) => (
               <li key={item.id}>

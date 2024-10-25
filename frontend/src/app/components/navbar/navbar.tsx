@@ -34,34 +34,34 @@ const navigation: Navigation = {
   categories: [
     {
       id: "categories",
-      name: "Categories",
+      name: "Categorias",
       sections: [
         {
           items: [
-            { name: "Automotive", href: "#" },
-            { name: "Babies & Kids", href: "#" },
-            { name: "Beauty & Personal Care", href: "#" },
+            { name: "Automotivo", href: "#" },
+            { name: "Bebês e Crianças", href: "#" },
+            { name: "Beleza e Cuidados Pessoais", href: "#" },
           ],
         },
         {
           items: [
-            { name: "Books & Office Supplies", href: "#" },
-            { name: "Electronics", href: "#" },
-            { name: "Fashion", href: "#" },
+            { name: "Livros e Material de Escritório", href: "#" },
+            { name: "Eletrônicos", href: "#" },
+            { name: "Moda", href: "#" },
           ],
         },
         {
           items: [
-            { name: "Health", href: "#" },
-            { name: "Hobbies & Collectibles", href: "#" },
-            { name: "Home & Decoration", href: "#" },
+            { name: "Saúde", href: "#" },
+            { name: "Hobbies e Itens Colecionáveis", href: "#" },
+            { name: "Casa e Decoração", href: "#" },
           ],
         },
         {
           items: [
-            { name: "Pet Shop", href: "#" },
-            { name: "Sports & Leisure", href: "#" },
-            { name: "Tools & Construction", href: "#" },
+            { name: "Loja de Animais", href: "#" },
+            { name: "Esportes e Lazer", href: "#" },
+            { name: "Ferramentas e Construção", href: "#" },
           ],
         },
       ],
