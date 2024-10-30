@@ -9,6 +9,7 @@ import Image from "next/image";
 function RegisterRight() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [cnpj, setCNPJ] = useState("");
   const [terms, setTerms] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState("");
@@ -62,6 +63,19 @@ function RegisterRight() {
               value={email}
               onChange={(ev) => setEmail(ev.target.value)}
             />
+            {/* <label
+              className="nunito-font text-[14px] text-gray-500"
+              htmlFor="CNPJ"
+            >
+              CNPJ
+            </label>
+            <input
+              className="w-full block outline-none border-[1px] border-gray-300 rounded-md h-[40px] p-2 text-[#2144e1] font-bold nunito-font mt-1 mb-2 placeholder:font-normal"
+              type="number"
+              placeholder="CNPJ"
+              value={cnpj}
+              onChange={(ev) => setCNPJ(ev.target.value)}
+            /> */}
             <label
               className="nunito-font text-[14px] text-gray-500"
               htmlFor="Password"

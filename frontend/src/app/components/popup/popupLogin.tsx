@@ -77,10 +77,10 @@ const PopupLogin: React.FC = () => {
                 >
                   Acessar
                 </button>
-                <button className="w-full h-[40px] bg-[#3870ff] mt-4 text-white nunito-font rounded-md flex justify-center items-center">
+                {/* <button className="w-full h-[40px] bg-[#3870ff] mt-4 text-white nunito-font rounded-md flex justify-center items-center">
                   <FaGoogle className="mr-2" />
                   Conectar com Google
-                </button>
+                </button> */}
                 <p className="pt-4 nunito-font text-gray-500 text-[14px] font-normal">
                   Você não tem uma conta?{" "}
                   <NextLink

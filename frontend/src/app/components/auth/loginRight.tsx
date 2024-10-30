@@ -101,10 +101,10 @@ const LoginRight: React.FC = () => {
             <button className="w-full h-[40px] bg-[#2144e1] text-white nunito-font rounded-md">
               Acessar
             </button>
-            <span className="w-full cursor-pointer h-[40px] bg-[#3870ff] mt-4 text-white nunito-font rounded-md flex justify-center items-center">
+            {/* <span className="w-full cursor-pointer h-[40px] bg-[#3870ff] mt-4 text-white nunito-font rounded-md flex justify-center items-center">
               <FaGoogle className="mr-2" />
               Conectar com Google
-            </span>
+            </span> */}
             <p className="pt-4 nunito-font text-gray-500 text-[14px] font-normal">
               Não tem uma conta?{" "}
               <NextLink href="/pages/auth/register" passHref>
